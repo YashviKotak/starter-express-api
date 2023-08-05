@@ -33,7 +33,8 @@ const BASE_URL=process.env.BASE_URL
 // }
 
 exports.userpost = async (req, res) => {
-    const file = req.file.filename;
+    // const file = req.file.filename;
+    const file = "yashu";
     const { fname, lname, email, mobile, gender, location, status } = req.body;
 
     if (!fname || !lname || !email || !mobile || !gender || !location || !status || !file) {
